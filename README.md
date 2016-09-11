@@ -1,2 +1,3 @@
 # budget
-Trying out flask with a small program for personal finance
+Maybe trying out kivy?
+Using Python 2.7 and Kivy
