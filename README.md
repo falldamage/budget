@@ -1,3 +1,2 @@
 # budget
-Maybe trying out kivy?
-Using Python 2.7 and Kivy
+Just a base for budget-gui at this moment.
