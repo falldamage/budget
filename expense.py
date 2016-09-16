@@ -16,7 +16,7 @@ class Expense:
         print("Testa {}".format(Expense.expense_count))
 
     def __del__(self):
-        class_name = self.__class__.__name__ # Test for github
+        class_name = self.__class__.__name__
         Expense.expense_count -= 1
         print(class_name, self.name, "destroyed")
 
