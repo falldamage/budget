@@ -4,4 +4,3 @@
 def load(filename):
     pass
 
-
