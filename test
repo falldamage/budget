@@ -1,0 +1,15 @@
+# Pseudo code for planning
+
+if add_button_clicked:
+    add_expense_menu()
+
+def add_expense_menu():
+    expense_name = input_form('Name')
+    expense_price = input_form('Price')
+    expense_type = dropdown_form('Expense', 'Matbudget', 'Goal')
+    expense_priority = dropdown_form('Important', 'Neutral', 'Leisure')
+    if expense_type is 'Expense':
+        new_expense = Expense(name,price)
+    else:
+        new_expense = Goal(name,price)
+

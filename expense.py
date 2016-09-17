@@ -4,19 +4,21 @@
 
 class Expense:
     """Common class for all expenses"""
-    expense_count = 0
+    __expense_count = 0
 
     def __init__(self, name, price):
         self.name = name
         self.price= price
-        Expense.expense_count += 1 # Have to learn how to decrease this too. How to kill in instance?
+        self.allocated = 0
+        Expense.__expense_count += 1 
 
     @staticmethod
     def amount_of_expenses():
-        print("Testa {}".format(Expense.expense_count))
+        print("Testa {}".format(Expense.__expense_count))
 
     def __del__(self):
         class_name = self.__class__.__name__
-        Expense.expense_count -= 1
+        Expense.__expense_count -= 1
         print(class_name, self.name, "destroyed")
+
 
